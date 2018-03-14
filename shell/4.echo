@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#	1.显示普通字符串:
+echo '1.显示普通字符串-------------'
+echo "It is a test"
+echo It is a test
+echo ''
+
+#	2.显示转义字符
+echo '2.显示转义字符---------------'
+echo "\"It is a test\""
+echo ''
+
+#	3.显示变量
+echo '3.显示变量-------------------'
+read name 
+echo "$name It is a test"
+echo -e "\n"
+
+#	4.显示换行
+echo '4.显示换行-------------------'
+echo -e "OK! \n" # -e 开启转义
+echo "It it a test"
+echo ''
+
+#	5.显示不换行
+echo '5.显示不换行-----------------'
+echo -e "OK! \c" # -e 开启转义 \c 不换行
+echo "It is a test"
+echo ''
